@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantyczny Układ 4</title>
+    <style>
+        body {
+            margin: 0 auto; 
+            padding: 0;
+            width: 600px;
+            height: 600px; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header, nav, main, footer {
+            border: 1px solid black; 
+            padding: 15px 5px; 
+            margin: 0;
+            text-align: center;
+        }
+        
+        main {
+            height: 50%; 
+            display: flex; 
+            flex-direction: row; 
+            align-items: stretch;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        main section, main aside {
+            border: 1px solid black; 
+            margin: 0;
+            padding: 20px 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main section {
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <p><B>INF.03-04-25.06-SG</B></p>
+    <header>
+        <h1>Blok nagłówkowy</h1>
+    </header>
+
+    <nav>
+        <h2>Blok nawigacyjny</h2>
+    </nav>
+
+    <main>
+        <h3>Blok główny</h3>
+
+        <section>
+            <h4>Sekcja lewa</h4>
+        </section>
+
+        <aside>
+            <h4>Sekcja prawa</h4>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Blok stopki</p>
+    </footer>
+
+</body>
+</html>
